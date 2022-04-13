@@ -13,17 +13,17 @@ const demoContent = [
   {
     hour: '12:00 - 12:30',
     tables: [
-      { table: 1, status: 'booked', bookingId: 0001 },
+      { table: 1, status: 'booked', bookingId: 1 },
       { table: 2, status: 'free', bookingId: null },
       { table: 3, status: 'event', bookingId: 1001 },
-      { table: 4, status: 'booked', bookingId: 0002 },
+      { table: 4, status: 'booked', bookingId: 2 },
     ],
   },
   {
     hour: '12:30 - 13:00',
     tables: [
-      { table: 1, status: 'booked', bookingId: 0003 },
-      { table: 2, status: 'booked', bookingId: 0004 },
+      { table: 1, status: 'booked', bookingId: 3 },
+      { table: 2, status: 'booked', bookingId: 4 },
       { table: 3, status: 'event', bookingId: 1002 },
       { table: 4, status: 'free', bookingId: null },
     ],
@@ -31,7 +31,7 @@ const demoContent = [
   {
     hour: '13:00 - 13:30',
     tables: [
-      { table: 1, status: 'booked', bookingId: 0005 },
+      { table: 1, status: 'booked', bookingId: 5 },
       { table: 2, status: 'event', bookingId: 1003 },
       { table: 3, status: 'event', bookingId: 1004 },
       { table: 4, status: 'free', bookingId: null },
@@ -40,16 +40,16 @@ const demoContent = [
   {
     hour: '13:30 - 14:00',
     tables: [
-      { table: 1, status: 'booked', bookingId: 0006 },
-      { table: 2, status: 'booked', bookingId: 0007 },
-      { table: 3, status: 'booked', bookingId: 0008 },
+      { table: 1, status: 'booked', bookingId: 6 },
+      { table: 2, status: 'booked', bookingId: 7 },
+      { table: 3, status: 'booked', bookingId: 8 },
       { table: 4, status: 'free', bookingId: null },
     ],
   },
   {
     hour: '14:00 - 14:30',
     tables: [
-      { table: 1, status: 'booked', bookingId: 0009 },
+      { table: 1, status: 'booked', bookingId: 9 },
       { table: 2, status: 'free', bookingId: null },
       { table: 3, status: 'free', bookingId: null },
       { table: 4, status: 'free', bookingId: null },
@@ -58,9 +58,9 @@ const demoContent = [
   {
     hour: '14:30 - 15:00',
     tables: [
-      { table: 1, status: 'booked', bookingId: 0010 },
+      { table: 1, status: 'booked', bookingId: 10 },
       { table: 2, status: 'event', bookingId: 1005 },
-      { table: 3, status: 'booked', bookingId: 0011 },
+      { table: 3, status: 'booked', bookingId: 11 },
       { table: 4, status: 'free', bookingId: null },
     ],
   },
@@ -76,8 +76,8 @@ const demoContent = [
   {
     hour: '15:30 - 16:00',
     tables: [
-      { table: 1, status: 'booked', bookingId: 0012 },
-      { table: 2, status: 'booked', bookingId: 0013 },
+      { table: 1, status: 'booked', bookingId: 12 },
+      { table: 2, status: 'booked', bookingId: 13 },
       { table: 3, status: 'free', bookingId: null },
       { table: 4, status: 'free', bookingId: null },
     ],
@@ -85,18 +85,18 @@ const demoContent = [
   {
     hour: '16:00 - 16:30',
     tables: [
-      { table: 1, status: 'booked', bookingId: 0014 },
+      { table: 1, status: 'booked', bookingId: 14 },
       { table: 2, status: 'event', bookingId: 1009 },
-      { table: 3, status: 'booked', bookingId: 0015 },
-      { table: 4, status: 'booked', bookingId: 0016 },
+      { table: 3, status: 'booked', bookingId: 15 },
+      { table: 4, status: 'booked', bookingId: 16 },
     ],
   },
   {
     hour: '16:30 - 17:00',
     tables: [
-      { table: 1, status: 'booked', bookingId: 0017 },
+      { table: 1, status: 'booked', bookingId: 17 },
       { table: 2, status: 'event', bookingId: 1010 },
-      { table: 3, status: 'booked', bookingId: 0018 },
+      { table: 3, status: 'booked', bookingId: 18 },
       { table: 4, status: 'free', bookingId: null },
     ],
   },
