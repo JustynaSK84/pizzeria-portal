@@ -125,10 +125,10 @@ const Tables = () => (
   <div>
     <div className={styles.component}>
       <h2>Tables</h2>
-      <Link to={`${process.env.PUBLIC_URL}/tables/booking/new`} activeClassName='active'>New Booking</Link>
-      <Link to={`${process.env.PUBLIC_URL}/tables/booking/:id`} activeClassName='active'>Booking ID</Link>
-      <Link to={`${process.env.PUBLIC_URL}/tables/events/new`} activeClassName='active'>New Event</Link>
-      <Link to={`${process.env.PUBLIC_URL}/tables/events/:id`} activeClassName='active'>Event ID</Link>
+      <Link to={`${process.env.PUBLIC_URL}/tables/booking/new`} >New Booking</Link>
+      <Link to={`${process.env.PUBLIC_URL}/tables/booking/:id`} >Booking ID</Link>
+      <Link to={`${process.env.PUBLIC_URL}/tables/events/new`} >New Event</Link>
+      <Link to={`${process.env.PUBLIC_URL}/tables/events/:id`} >Event ID</Link>
     </div>
 
     <Paper className={styles.component}>
@@ -149,7 +149,7 @@ const Tables = () => (
                 <TableCell className={styles.hour}>{row.hour}</TableCell>
                 {row.tables.map((table) => {
                   return (
-                    <TableCell className={styles.book} key={table.id}>
+                    <TableCell className={styles.book} key={`${table.bookingId}-${row.hour}-${table.table}`}>
                       {renderActions(table.status, table)}
                     </TableCell>
                   );
